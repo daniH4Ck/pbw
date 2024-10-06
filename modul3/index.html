@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Usakti</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top"> 
+        <div class="container">
+            <a class="navbar-brand" href="#">Ahmad Dani Saputra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" onclick="showHome()">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#table" onclick="showTable()">Tabel Mahasiswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex my-2 my-lg-0 ms-3">
+                            <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Cari</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div id="home" class="container my-5 pt-5">
+            <div class="text-center mb-4">
+                <img src="https://trisakti.ac.id/wp-content/uploads/2024/01/Logo-Universitas-Trisakti-WHITE.png.webp" alt="Logo Trisakti" class="img-fluid" style="max-width: 150px;">
+            </div>
+
+            <div class="card mb-4 mx-auto bg-white text-black" style="width: 18rem;">
+                <img src="foto.png" class="card-img-top" alt="Trisakti University">
+                <div class="card-body">
+                    <h5 class="card-title">Ahmad Dani Saputra</h5>
+                    <p class="card-text">065002200020<br>Sistem Informasi</p>
+                    <a href="https://www.trisakti.ac.id" class="btn btn-outline-primary">Kunjungi Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="table" class="container my-5" style="display: none;">
+            <h2 class="text-center">Tabel Mahasiswa</h2>
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>NIM</th>
+                        <th>Program Studi</th>
+                        <th>Alamat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ahmad Dani Saputra</td>
+                        <td>065002200020</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Muhammad Rizky Nurul Julhar</td>
+                        <td>065002200007</td>
+                        <td>Sistem Informasi</td>
+                        <td>Batam</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Satria Muhammad</td>
+                        <td>065002200017</td>
+                        <td>Sistem Informasi</td>
+                        <td>Bekasi</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>M. Satria Pratama</td>
+                        <td>065002200018</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ridwan Bhakara</td>
+                        <td>065002200030</td>
+                        <td>Sistem Informasi</td>
+                        <td>Sumatera Utara</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Ahmad Althaf Puspito Wigati</td>
+                        <td>65002200008</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ryandra Rafa Aditya</td>
+                        <td>65002200009</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Rizky Ramadhan</td>
+                        <td>65002200010</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Ery Febrian</td>
+                        <td>65002200011</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Athar Dhiya'an Komar</td>
+                        <td>65002200012</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Muhammad Reyhan Nurizal</td>
+                        <td>65002200013</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Muhammad Asyraf Fikri</td>
+                        <td>65002200014</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Muhammad Rifqi Zaki Fahrezi</td>
+                        <td>65002200015</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Jihan Aulia Salsabila</td>
+                        <td>65002200016</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Nayaka Wiryatama</td>
+                        <td>65002200003</td>
+                        <td>Sistem Informasi</td>
+                        <td>Jakarta</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Ahmad Dani Saputra. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function showHome() {
+            document.getElementById("home").style.display = "block";
+            document.getElementById("table").style.display = "none";
+        }
+
+        function showTable() {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("table").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
