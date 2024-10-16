@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.converter {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.convert-btn {
+    width: 100%;
+    background-color: #4e73df;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button.convert-btn:hover {
+    background-color: #375a7f;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #1cc88a;
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .converter {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    button.convert-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
