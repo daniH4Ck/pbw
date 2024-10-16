@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Dani Saputra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <h2><i class="fas fa-coins"></i> Aplikasi Konversi Mata Uang</h2>
+            <form id="currency-form">
+                <div class="input-group">
+                    <label for="amount">Jumlah:</label>
+                    <input type="number" id="amount" placeholder="Enter amount" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="fromCurrency">Dari Mata Uang:</label>
+                    <select id="fromCurrency">
+                        <option value="BHD">Bahraini Dinar (BHD)</option>
+                        <option value="USD">Dolar AS (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="JPY">Yen Jepang (JPY)</option>
+                        <option value="IDR">Rupiah Indonesia (IDR)</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="toCurrency">Ke Mata Uang:</label>
+                    <select id="toCurrency">
+                        <option value="BHD">Bahraini Dinar (BHD)</option>
+                        <option value="USD">Dolar AS (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="JPY">Yen Jepang (JPY)</option>
+                        <option value="IDR">Rupiah Indonesia (IDR)</option>
+                    </select>
+                </div>
+
+                <button type="button" class="convert-btn" onclick="convertCurrency()">Konversi</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
